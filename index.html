@@ -3,7 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Product Landing Page</title>
+        <title>Epson Landing Page</title>
+        <link href='https://fonts.googleapis.com/css?family=Lato'>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family: 'Lato';
+            }
+
+            #nav-bar {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                justify-content: center;
+                width: auto;
+            }
+
+            .nav-link {
+                width: auto;
+                padding: 10px;
+                margin: 5px;
+                border-radius: 4px;
+                background-color: gray;
+            }
+
+            @media (max-width: 800px) {
+                #nav-bar {
+                    flex-direction: column;
+                }
+            }
+        </style>
     </head>
     <body>
         <header id="header">
@@ -13,6 +46,8 @@
                 <a class="nav-link" href="#sec_2">Sec_2</a>
                 <a class="nav-link" href="#sec_3">Sec_3</a>
             </nav>
+        </header>
+        <div id="body">
             <h2 id="sec_1">Video</h2>
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dsUO8jCZFEU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h2 id="sec_2">section 2</h2>
@@ -21,8 +56,7 @@
                 <input id="submit" type="submit" value="Submit">
             </form>
             <h2 id="sec_3">section 3</h2>  
-        </header>
-
+        </div>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
